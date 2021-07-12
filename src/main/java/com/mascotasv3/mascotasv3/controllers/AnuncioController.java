@@ -1,10 +1,10 @@
-package com.mascotas.mascotas.controllers;
+package com.mascotasv3.mascotasv3.controllers;
 
 import java.util.ArrayList;
 import java.util.Optional;
 
-import com.mascotas.mascotas.models.AnuncioModel;
-import com.mascotas.mascotas.services.AnuncioService;
+import com.mascotasv3.mascotasv3.models.AnuncioModel;
+import com.mascotasv3.mascotasv3.services.AnuncioService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

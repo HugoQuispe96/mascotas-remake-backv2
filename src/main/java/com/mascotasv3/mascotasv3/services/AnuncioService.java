@@ -1,10 +1,10 @@
-package com.mascotas.mascotas.services;
+package com.mascotasv3.mascotasv3.services;
 
 import java.util.ArrayList;
 import java.util.Optional;
 
-import com.mascotas.mascotas.models.AnuncioModel;
-import com.mascotas.mascotas.repositories.AnuncioRepository;
+import com.mascotasv3.mascotasv3.models.AnuncioModel;
+import com.mascotasv3.mascotasv3.repositories.AnuncioRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

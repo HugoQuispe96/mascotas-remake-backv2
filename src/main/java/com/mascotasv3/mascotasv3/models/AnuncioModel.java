@@ -1,4 +1,4 @@
-package com.mascotas.mascotas.models;
+package com.mascotasv3.mascotasv3.models;
 
 import javax.persistence.*;
 
