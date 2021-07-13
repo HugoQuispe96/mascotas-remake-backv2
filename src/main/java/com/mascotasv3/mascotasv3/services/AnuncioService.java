@@ -18,7 +18,16 @@ public class AnuncioService {
     return (ArrayList<AnuncioModel>) anuncioRepository.findAll();
   }
 
-  public AnuncioModel createAnuncio(AnuncioModel anuncio){
+  public ArrayList<AnuncioModel> getAnunciosByTipoPublicacion(Integer tipoPublicacion){
+    return anuncioRepository.findByTipoPublicacion(tipoPublicacion);
+  }
+
+  public ArrayList<AnuncioModel> getAnunciosByTipoMascota(Integer tipoMascota){
+    return anuncioRepository.findByTipoMascota(tipoMascota);
+  }
+
+
+  public AnuncioModel saveAnuncio(AnuncioModel anuncio){
     return anuncioRepository.save(anuncio);
   }
 
@@ -26,6 +35,10 @@ public class AnuncioService {
     return anuncioRepository.findById(id);
   }
 
+  public boolean existsById(Long id){
+    return anuncioRepository.existsById(id);
+  }
+  
   public boolean deleteAnuncio(Long id) {
     try{
       anuncioRepository.deleteById(id);
