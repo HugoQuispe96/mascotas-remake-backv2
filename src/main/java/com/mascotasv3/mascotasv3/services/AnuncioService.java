@@ -26,6 +26,9 @@ public class AnuncioService {
     return anuncioRepository.findByTipoMascota(tipoMascota);
   }
 
+  public ArrayList<AnuncioModel> getAnunciosByTipoMascotaAndTipoPublicacion(Integer tipoMascota, Integer tipoPublicacion){
+    return anuncioRepository.findByTipoMascotaAndTipoPublicacion(tipoMascota, tipoPublicacion);
+  }
 
   public AnuncioModel saveAnuncio(AnuncioModel anuncio){
     return anuncioRepository.save(anuncio);

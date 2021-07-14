@@ -11,4 +11,5 @@ import org.springframework.stereotype.Repository;
 public interface AnuncioRepository extends CrudRepository<AnuncioModel, Long> {
   public abstract ArrayList<AnuncioModel> findByTipoPublicacion(Integer tipoPublicacion);
   public abstract ArrayList<AnuncioModel> findByTipoMascota(Integer tipoMascota);
+  public abstract ArrayList<AnuncioModel> findByTipoMascotaAndTipoPublicacion(Integer tipoMascota, Integer tipoPublicacion);
 }

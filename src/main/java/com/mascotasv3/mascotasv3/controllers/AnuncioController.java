@@ -37,6 +37,13 @@ public class AnuncioController {
         return anuncioService.getAnunciosByTipoMascota(tipoMascota);
     }
 
+    @GetMapping(path = "/tipo_mascota/{tipoMascota}/tipo_publicacion/{tipoPublicacion}")
+    public ArrayList<AnuncioModel> getAnunciosByTipoMascotaAndTipoPublicacion(
+        @PathVariable("tipoMascota") Integer tipoMascota,
+        @PathVariable("tipoPublicacion") Integer tipoPublicacion){
+        return anuncioService.getAnunciosByTipoMascotaAndTipoPublicacion(tipoMascota, tipoPublicacion);
+    }
+    
     @PostMapping()
     public ResponseEntity<Object> createAnuncio(@Valid @RequestBody ValidateAnuncioModel validateAnuncio, BindingResult bindingResult){
         if (bindingResult.hasErrors()) {
